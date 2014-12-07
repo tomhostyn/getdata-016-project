@@ -30,6 +30,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 3. Run run_analysis()
 4. the dataset is transformed in a tidy data set and saved in mean_uci_har.txt
 
+# Functions
 ## run_analysis 
 
 Loads the various files of the unzipped package in the current directory, transforms it into a tidy package, writes the resulting data table to mean_uci_har.txt
