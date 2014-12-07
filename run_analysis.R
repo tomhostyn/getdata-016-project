@@ -104,7 +104,7 @@ transform_har_data_table <- function (dt){
   
   sapply(columns, function(col){
     expr <- parse(text = paste0("m_", col, ":=mean(", col,")"))
-    dt[,eval(expr),by=Subject]
+    dt[,eval(expr),by=list(Subject, Activity)]
   } )
   
   dt <- select (dt, -one_of(columns))
